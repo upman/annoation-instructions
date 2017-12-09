@@ -1,0 +1,51 @@
+
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">The sentences below is from text chats having English and Hindi words. They need to be transformed to dictionary English/Hindi words. For each word:
+<ul>
+	<li>Select <b>&#39;Looks good&#39;</b> if the word belongs to the English dictionary. Leave the input below the list Empty.</li>
+	<li>Select <strong>&#39;Acronym&#39; </strong>for words that are short forms of words. Example: lol, irl, etc. Type the expanded form of the acronym in the input below.</li>
+    <li>Select <strong>&#39;Short Form&#39; </strong>for words that are shortened versions of english Words. Example: plz, y, u, ur etc. Type the dictionary form of the word in the input below.</li>
+</ul>
+<ul id="collapse-items" class="collapse">
+    <li>Select <b>&#39;Hindi&#39;</b> if the word is a Hindi word. Enter the spelling from Google translate as shown in the screenshot in the input below. <b><i>Do not translate the word to english</i></b><br />
+        <img src="https://i.imgur.com/UsjV4J8.jpg" width="80%" /><img src="https://i.imgur.com/VwXj8Fx.jpg" /></li>
+        <li>Select <b>&#39;Merge&#39;</b> for all words where there is an unnecessary space between words. Type the combined word in one of the inputs below.<img src="https://i.imgur.com/jmYRBuT.jpg" /></li>
+        <li>Select <strong>&#39;Split&#39; </strong>for words that need to be split into two or more separate words. Type the split words into the input below.<img src="https://imgur.com/4UXAoWQ.jpg" /></li>
+        <li>Select <strong>&#39;Typo&#39; </strong>for words with spelling mistakes in them. Example: deleat, exersice, etc.</li>
+        <li>Select <strong>&#39;Wordplay&#39; </strong>when extra vowels/consonants are used (heeeeelppp!) or a phonetic spelling of the word(lyf, iz, da) is used. Type the dictionary form in the input below.</li>
+        <li>Select <strong>&#39;Profanity&#39; </strong>if the words are profane.</li>
+        <li>Select <strong>&#39;Unrecognizable or other language&#39; </strong>if the word is from another language or if you cannot recognize it as a word.</li>
+        <li>Do not correct names of people, if they appear with the wrong spelling.</li>
+    </ul>
+    <button type="button" id="collapse-button" class="btn btn-info" data-toggle="collapse" data-target="#collapse-items" aria-expanded="false"></button>
+</ul>
+</div>
+</div>
+</div>
+<!-- End Instructions --><!-- Content Body -->
+
+<style type="text/css">.glowing-border {
+        outline: none;
+        border-color: red;
+        box-shadow: 0 0 10px rgb(252, 124, 124);
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    #collapse-button[aria-expanded=true]:after {
+        content: "Show less"
+    }
+
+    #collapse-button[aria-expanded=false]:after {
+        content: "Show more"
+    }
+</style>
+
